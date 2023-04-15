@@ -33,6 +33,9 @@
                                         <color key="tintColor" red="0.070588235289999995" green="0.42745098040000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="choiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3E-dH-Rze"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-zN-5zy">
                                         <rect key="frame" x="0.0" y="619" width="313" height="60"/>
@@ -42,6 +45,9 @@
                                         <color key="tintColor" red="0.76470589639999997" green="0.67450982329999998" blue="0.58431375029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="choiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaw-uH-w6g"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -55,6 +61,11 @@
                             <constraint firstItem="t0a-OI-eMY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ijj-5i-ZIH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstChoice" destination="kuG-1n-Vq2" id="H1f-RP-YLJ"/>
+                        <outlet property="secondChoice" destination="8Pg-zN-5zy" id="hat-lW-8Ke"/>
+                        <outlet property="storyLabel" destination="yVd-Ky-GgZ" id="4Mc-fM-XCO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

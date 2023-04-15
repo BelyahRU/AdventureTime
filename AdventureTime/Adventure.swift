@@ -1,3 +1,4 @@
+import UIKit
 struct Adventure{
     var storiesArarray = [
         Stories(
@@ -39,8 +40,14 @@ struct Adventure{
         
     var currentStory = 0
     
-    func userChoice(){
-        
+    
+    mutating func updateStory(_ answer: Int){
+        if answer == 1{
+            currentStory = storiesArarray[currentStory].choice1Destination
+        } else {
+            currentStory = storiesArarray[currentStory].choice2Destination
+        }
+        print(currentStory)
     }
     
 }
